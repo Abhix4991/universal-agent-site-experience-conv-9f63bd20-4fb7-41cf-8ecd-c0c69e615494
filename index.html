@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AURA ATELIER — Couture Streetwear &amp; Editorial Apparel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="brand">AURA<span>®</span></div>
+    <div class="nav-links">
+      <a href="#hero">Atelier</a>
+      <a href="#fit">Fabric &amp; Cut</a>
+      <a href="#lookbook">Lookbook</a>
+    </div>
+    <div class="nav-right">
+      <div class="currency-picker">
+        <span class="curr-active">INR (₹)</span>
+      </div>
+      <button class="cart-btn" id="cart-btn" aria-label="Open shopping bag">Bag (<span id="cart-count">0</span>)</button>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-bg-text">AURA</div>
+      
+      <div class="viewport-3d" id="tilt-viewport">
+        <div class="tilt-container" id="tilt-container">
+          <img id="focal-img" src="assets/visual-1.jpg" alt="AURA Raw Oversized Trench Coat" class="hero-img">
+          <div class="layer-badge">PERSPECTIVE VIEW</div>
+        </div>
+      </div>
+
+      <div class="hero-panel">
+        <span class="sub-heading">Edition 04 / Editorial Exclusive</span>
+        <h1 class="hero-title" id="product-title">Raw Oversized Trench</h1>
+        <p class="hero-price" id="hero-price-display">₹18,499 INR</p>
+        
+        <div class="customizer-controls">
+          <p class="control-label">Material &amp; Palette</p>
+          <div class="swatch-group" role="radiogroup" aria-label="Material and Colorway">
+            <button class="mat-btn active" role="radio" aria-checked="true" aria-label="Terracotta Canvas" data-img="assets/visual-1.jpg" data-color="#C85A32" data-name="Raw Oversized Trench" data-price="₹18,499">
+              <span class="swatch" style="background:#C85A32"></span> Terracotta
+            </button>
+            <button class="mat-btn" role="radio" aria-checked="false" aria-label="Obsidian Wool" data-img="assets/visual-2.jpg" data-color="#121212" data-name="Obsidian Structured Parka" data-price="₹21,999">
+              <span class="swatch" style="background:#121212"></span> Obsidian
+            </button>
+            <button class="mat-btn" role="radio" aria-checked="false" aria-label="Bone Hemp" data-img="assets/visual-3.jpg" data-color="#E5DEC9" data-name="Bone Hemp Tailored Suit" data-price="₹24,500">
+              <span class="swatch" style="background:#E5DEC9"></span> Bone Hemp
+            </button>
+          </div>
+        </div>
+
+        <div class="hero-actions">
+          <button class="primary-cta" id="hero-buy-btn">Add to Bag</button>
+          <button class="secondary-cta" id="inspect-trigger">View Craftsmanship</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="fabric-section" id="fit">
+      <div class="section-header">
+        <span class="sub-heading">Tactile Craftsmanship</span>
+        <h2>High-Density Micro-Weave Canvas</h2>
+      </div>
+      <div class="fabric-container">
+        <div class="fabric-card" id="texture-card">
+          <div class="fabric-visual">
+            <img src="assets/visual-4.jpg" alt="Organic Canvas Fabric Texture" class="fabric-img">
+          </div>
+          <div class="fabric-info">
+            <h3>450 GSM Heavyweight Organic Canvas</h3>
+            <p>Custom woven in Ahmedabad using long-staple Indian cotton. Water-resistant matte wash coating with soft tumble-dried texture.</p>
+            <ul class="spec-list">
+              <li><span>Weight:</span> 450 GSM Organic Cotton</li>
+              <li><span>Drape:</span> Sculpted Oversized Silhouette</li>
+              <li><span>Finish:</span> Matte Anti-Reflective Wash</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="lookbook-section" id="lookbook">
+      <div class="section-header">
+        <span class="sub-heading">Campaign</span>
+        <h2>Streetwear Editorial 2025</h2>
+      </div>
+      <div class="asymmetric-grid">
+        <article class="editorial-card tall">
+          <img src="assets/visual-2.jpg" alt="AURA Streetwear Look 1">
+          <div class="card-caption">
+            <span>Look 01</span>
+            <h4>Sculpted Canvas Jacket — ₹16,200</h4>
+          </div>
+        </article>
+        <article class="editorial-card wide">
+          <img src="assets/visual-5.jpg" alt="AURA Streetwear Look 2">
+          <div class="card-caption">
+            <span>Look 02</span>
+            <h4>Minimal Silhouette Overcoat — ₹19,800</h4>
+          </div>
+        </article>
+        <article class="editorial-card standard">
+          <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1000&q=85" alt="AURA Streetwear Look 3">
+          <div class="card-caption">
+            <span>Look 03</span>
+            <h4>Structured Pleated Trousers — ₹11,500</h4>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="details-section">
+      <div class="section-header">
+        <span class="sub-heading">Information</span>
+        <h2>Fulfillment &amp; Delivery</h2>
+      </div>
+      <div class="accordion">
+        <details open>
+          <summary>Domestic Shipping Across India</summary>
+          <div class="accordion-content">
+            <p>Free express delivery nationwide (2-4 business days). Dispatch from Mumbai Atelier with tracking updates via WhatsApp/SMS.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Fit &amp; Sizing Guarantee</summary>
+          <div class="accordion-content">
+            <p>Relaxed unisex fitting. Free exchanges within 14 days if the drape isn't exact to your style preference.</p>
+          </div>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <div class="drawer-overlay" id="drawer-overlay"></div>
+  <aside class="purchase-drawer" id="drawer" aria-hidden="true" role="dialog" aria-labelledby="drawer-title">
+    <div class="drawer-header">
+      <h3>Your Selection</h3>
+      <button class="close-btn" id="close-drawer" aria-label="Close drawer">&times;</button>
+    </div>
+    <div class="drawer-body">
+      <div class="drawer-item">
+        <div class="drawer-color-preview" id="drawer-preview"></div>
+        <div>
+          <h4 id="drawer-title">Raw Oversized Trench</h4>
+          <p id="drawer-mat">Terracotta Canvas Edition</p>
+          <p class="price" id="drawer-price">₹18,499 INR</p>
+        </div>
+      </div>
+      <div class="size-selector">
+        <label id="size-label">Select Size</label>
+        <div class="sizes" role="radiogroup" aria-labelledby="size-label">
+          <button class="size-btn" role="radio" aria-checked="false">S</button>
+          <button class="size-btn active" role="radio" aria-checked="true">M</button>
+          <button class="size-btn" role="radio" aria-checked="false">L</button>
+          <button class="size-btn" role="radio" aria-checked="false">XL</button>
+        </div>
+      </div>
+    </div>
+    <div class="drawer-footer">
+      <button class="checkout-btn" id="checkout-btn">Proceed to Express Checkout</button>
+    </div>
+  </aside>
+
+  <footer class="footer">
+    <div class="brand">AURA ATELIER</div>
+    <p>© 2025 AURA Streetwear Atelier. Crafted for Modern Fashion Editorial.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
